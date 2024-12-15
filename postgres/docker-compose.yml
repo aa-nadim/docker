@@ -1,0 +1,22 @@
+services:
+  postgres:
+    container_name: postgres_16_1_alpine
+    image: postgres:16.1-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: aa_nadim
+      POSTGRES_PASSWORD: aa_nadim@123
+      POSTGRES_DB: inventory-management-db-demo
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - inventoryManagement_network
+
+volumes:
+  postgres_data:
+
+networks:
+  inventoryManagement_network:
+    driver: bridge
