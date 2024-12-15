@@ -1,0 +1,16 @@
+python3 -m venv .venv 
+_____________________
+Linux---->
+
+      source .venv/bin/activate   
+
+_____________________
+Windows--->
+      source .venv/Scripts/activate
+
+
+_____________________
+pip install -r requirements.txt
+
+
+
