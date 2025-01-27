@@ -1,5 +1,10 @@
 # Docker
 
+Clean up your HDD
+To free up system HDD space, please use the following command. It will delete unnecessary Docker images, volumes, networks, and cached Docker objects:
+
+`docker system prune -a --volumes`
+
 ```
 Stop All Running Containers
 
